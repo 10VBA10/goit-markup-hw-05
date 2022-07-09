@@ -197,7 +197,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: color var(--transition-time-hover) var(--transition-cubic);
+  transition: color var(--transition-time-hover) var(--transition-cubic) text-shadow var(--transition-time-hover) var(--transition-cubic);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -384,15 +384,18 @@ address {
 .work-img-text {
   position: absolute;
   bottom: 0;
-
+  height: 70px;
   width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  /* padding-top: 27px;
+  padding-bottom: 27px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: var(--work-img-bg-color);
 
   font-weight: 700;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
@@ -545,16 +548,13 @@ address {
   border-radius: 4px;
 
   transition: color var(--transition-time-hover) var(--transition-cubic),
-    background-color var(--transition-time-hover) var(--transition-cubic);
+    background-color var(--transition-time-hover) var(--transition-cubic) box-shadow var(--transition-time-hover) var(--transition-cubic);
 }
 .projects-btn:hover,
 .projects-btn:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
-
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .projects-list-btn .projects-btn.current {
   background-color: var(--accent-color);
@@ -628,9 +628,12 @@ address {
   left: 50%;
 
   transform: translate(-50%, -50%);
-  transition: var(--transition-time-hover) opacity var(--transition-time-hover);
+  transition: var(--transition-time-hover) opacity var(--transition-time-hover) box-shadow var(--transition-time-hover) var(--transition-cubic);
 }
-.projects-cards:hover .cards-overlay {
+.projects-cards{
+  display: block;
+}
+.projects-cards:hover .cards-overlay, .projects-cards:focus .cards-overlay {
   transform: translateY(0);
 }
 .port-cards-link:hover .cards-text {
@@ -639,9 +642,7 @@ address {
 
 .projects-cards:hover,
 .projects-cards:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.06);
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-title {
   margin-bottom: 4px;
