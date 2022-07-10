@@ -197,7 +197,7 @@ address {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: color var(--transition-time-hover) var(--transition-cubic) text-shadow var(--transition-time-hover) var(--transition-cubic);
+  transition: color var(--transition-time-hover) var(--transition-cubic), text-shadow var(--transition-time-hover) var(--transition-cubic);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -449,7 +449,7 @@ address {
   color: var(--team-social-icons);
 
   transition: color var(--transition-time-hover) var(--transition-cubic),
-    background-color var(--transition-time-hover) var(--transition-cubic);
+  background-color var(--transition-time-hover) var(--transition-cubic);
 }
 .team-social-link:hover,
 .team-social-link:focus {
@@ -513,7 +513,7 @@ address {
   color: var(--team-social-icons);
 
   transition: color var(--transition-time-hover) var(--transition-cubic),
-    border-color var(--transition-time-hover) var(--transition-cubic);
+  border-color var(--transition-time-hover) var(--transition-cubic);
 }
 .clients-logo-link:hover,
 .clients-logo-link:focus {
@@ -548,7 +548,7 @@ address {
   border-radius: 4px;
 
   transition: color var(--transition-time-hover) var(--transition-cubic),
-    background-color var(--transition-time-hover) var(--transition-cubic) box-shadow var(--transition-time-hover) var(--transition-cubic);
+  background-color var(--transition-time-hover) var(--transition-cubic), box-shadow var(--transition-time-hover) var(--transition-cubic);
 }
 .projects-btn:hover,
 .projects-btn:focus {
@@ -628,7 +628,7 @@ address {
   left: 50%;
 
   transform: translate(-50%, -50%);
-  transition: var(--transition-time-hover) opacity var(--transition-time-hover) box-shadow var(--transition-time-hover) var(--transition-cubic);
+  transition: opacity var(--transition-time-hover) var(--transition-cubic), box-shadow var(--transition-time-hover) var(--transition-cubic);
 }
 .projects-cards{
   display: block;
